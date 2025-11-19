@@ -1,0 +1,27 @@
+cabal-version:      3.14
+name:               project-euler
+version:            0.1.0.0
+-- synopsis:
+-- description:
+license:            MIT
+license-file:       LICENSE
+author:             wyattgill9
+maintainer:         wyattgill01@outlook.com
+-- copyright:
+category:           Data
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+executable project-euler
+    import:           warnings
+    main-is:          Main.hs
+    other-modules: Answers
+    build-depends: base
+                 , primes
+    hs-source-dirs:   app src
+    default-language: GHC2024
+    -- ghc-options: -Wall -Wno-missing-home-modules -Wno-missing-signatures -Wno-type-defaults -Wno-partial-fields
